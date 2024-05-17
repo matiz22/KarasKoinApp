@@ -1,0 +1,15 @@
+<div>
+  <p>Index: {{ data.index }}</p>
+  <p>Timestamp: {{ data.timestamp }}</p>
+  <p>Proof: {{ data.proof }}</p>
+  <p>Previous Hash: {{ data.previous_hash }}</p>
+  <p>Transactions:</p>
+  <ul>
+    <li *ngFor="let transaction of data.transactions">
+      <p>Angler: {{ transaction.angler }}</p>
+      <p>Fishery: {{ transaction.fishery }}</p>
+      <p>Fish: {{ transaction.fish }}</p>
+      <p>Amount: {{ transaction.amount }}</p>
+    </li>
+  </ul>
+</div>

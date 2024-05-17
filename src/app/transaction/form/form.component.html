@@ -1,0 +1,32 @@
+<div class="form-container">
+  <form #fishForm="ngForm" (ngSubmit)="submitForm(fishForm)">
+    <div class="icon-container">
+      <img ngSrc="assets/img.png" alt="icon" class="circular-icon" height="183" width="275">
+    </div>
+    <mat-form-field class="full-width">
+      <mat-label>Angler</mat-label>
+      <input matInput type="text" id="angler" name="angler" [(ngModel)]="formData.angler" required>
+      <mat-hint>Enter the name of the angler</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Fishery</mat-label>
+      <input matInput type="text" id="fishery" name="fishery" [(ngModel)]="formData.fishery" required>
+      <mat-hint>Enter the name of the fishery</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Fish</mat-label>
+      <input matInput type="text" id="fish" name="fish" [(ngModel)]="formData.fish" required>
+      <mat-hint>Enter the type of fish</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Weight</mat-label>
+      <input matInput type="number" id="weight" name="weight" [(ngModel)]="formData.weight" required>
+      <mat-hint>Enter the weight of the fish</mat-hint>
+    </mat-form-field>
+
+    <button mat-flat-button type="submit">Submit</button>
+  </form>
+</div>

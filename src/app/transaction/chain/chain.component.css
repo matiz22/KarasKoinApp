@@ -1,0 +1,9 @@
+.scrollable-container {
+  height: 800px;
+  overflow-y: auto;
+  color: white;
+}
+
+.item {
+  margin-bottom: 20px;
+}

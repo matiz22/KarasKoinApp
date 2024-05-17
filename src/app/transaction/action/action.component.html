@@ -1,0 +1,17 @@
+<div class="button-container">
+  <button mat-flat-button (click)="mine()">Mine</button>
+  <button mat-flat-button (click)="chain()">Chain</button>
+  <button mat-flat-button>Show nodes</button>
+</div>
+
+<mat-form-field class="full-width">
+  <input matInput type="text" id="node" name="node" [(ngModel)]="nodeData" required>
+  <mat-hint>Register Node</mat-hint>
+</mat-form-field>
+
+<div class="button-container">
+  <button mat-flat-button (click)="sendNodeToServer()">Send Node</button>
+</div>
+
+
+

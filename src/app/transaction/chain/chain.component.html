@@ -1,0 +1,18 @@
+<div class="scrollable-container">
+  <div *ngFor="let item of jsonData" class="item">
+    <p>Index: {{ item.index }}</p>
+    <p>Timestamp: {{ item.timestamp }}</p>
+    <p>Proof: {{ item.proof }}</p>
+    <p>Previous Hash: {{ item.previous_hash }}</p>
+    <p>Transactions:</p>
+    <ul>
+      <li *ngFor="let transaction of item.transactions">
+        <p>Angler: {{ transaction.angler }}</p>
+        <p>Fishery: {{ transaction.fishery }}</p>
+        <p>Fish: {{ transaction.fish }}</p>
+        <p>Amount: {{ transaction.amount }}</p>
+      </li>
+    </ul>
+    <hr>
+  </div>
+</div>

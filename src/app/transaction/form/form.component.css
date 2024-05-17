@@ -1,0 +1,40 @@
+mat-hint{
+  color: grey;
+}
+.form-container {
+
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.full-width {
+  width: 100%;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-icon {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circular-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circular-icon {
+  background-size: cover;
+  background-position: center;
+}
+
